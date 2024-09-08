@@ -1,7 +1,7 @@
 #! /bin/bash
 
 python -m pip install poetry
-cd app
+cd promoter
 python -m poetry install .
 
 # get 2 images
