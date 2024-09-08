@@ -40,6 +40,9 @@ event_path = os.path.join(script_dir, "logs", "cb_api_logs")
 webhook_logs = os.path.join(script_dir, "logs", "webhook_logs")
 promo_dir = os.path.join(script_dir, "logs", "promo_materials")
 
+for directory in [explore_path, event_path, webhook_logs, promo_dir]:
+    os.makedirs(directory, exist_ok=True)
+
 promo_list_fp = os.path.join(explore_path, "promo_list.json")
 explore_info_fp = os.path.join(explore_path, f"{ymd}.json")
 
