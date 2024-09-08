@@ -2,7 +2,7 @@
 
 python -m pip install poetry
 cd promoter
-python -m poetry install .
+python -m poetry install
 
 # get 2 images
 curl \
